@@ -18,7 +18,8 @@ class BagMain {
         // TODO: Implement this.
         for (int i = 0; i < bags.length; i++) {
             if (double_enhance_handbags) {
-                bags[i].enhance().enhance();
+                bags[i].enhance();
+                bags[i].enhance();
             } else {
                 bags[i].enhance();
             }
