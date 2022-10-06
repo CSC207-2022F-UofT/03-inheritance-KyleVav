@@ -30,7 +30,7 @@ public abstract class Bag {
      * be empty (e.g. numberOfContents is 0 and an empty String array for
      * its contents.)
      */
-    Bag(String bag_color, int bag_capacity) {
+    public Bag(String bag_color, int bag_capacity) {
         this.color = bag_color;
         this.capacity = bag_capacity;
         this.numberOfContents = 0;
