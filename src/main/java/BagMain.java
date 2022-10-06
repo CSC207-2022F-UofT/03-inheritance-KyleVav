@@ -17,7 +17,7 @@ class BagMain {
     public static void enhanceBags(Bag[] bags, boolean double_enhance_handbags) {
         // TODO: Implement this.
         for (int i = 0; i < bags.length; i++) {
-            if double_enhance_handbags {
+            if (double_enhance_handbags) {
                 bags[i].enhance().enhance();
             } else {
                 bags[i].enhance();
