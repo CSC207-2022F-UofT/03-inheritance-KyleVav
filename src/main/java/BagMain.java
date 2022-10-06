@@ -40,7 +40,7 @@ class BagMain {
         int total = 0;
         for (int i = 0; i < bags.length; i++) {
             if (bags[i] instanceof CrossbodyBag) {
-                total += bags[i].getNumberOfStraps();
+                total += 0
             }
         }
         return total;
