@@ -43,5 +43,6 @@ class BagMain {
                 total += bags[i].getNumberOfStraps();
             }
         }
+        return total;
     }
 }
