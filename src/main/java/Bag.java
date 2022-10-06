@@ -136,7 +136,7 @@ public abstract class Bag {
      */
     public void increaseCapacity(int n) {
         // TODO: Implement this method.
-        this.capacity += 1;
+        this.capacity += n;
     }
 
     /**
