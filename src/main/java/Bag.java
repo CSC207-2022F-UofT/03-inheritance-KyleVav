@@ -86,7 +86,7 @@ public abstract class Bag {
     public boolean addItem(String new_item) {
         if (this.numberOfContents < this.capacity) {
             this.numberOfContents += 1;
-            new_contents = Arrays.copyOf(this.contents, this.contents.length + 1);
+            String[] new_contents = Arrays.copyOf(this.contents, this.contents.length + 1);
             new_contents[new_contents.length - 1] = new_item;
             this.contents = new_contents;
             return true;
@@ -112,9 +112,9 @@ public abstract class Bag {
         if (this.contents.length == 0) {
             return null;
         }
-        pop_item = this.contents[this.contents.length-1];
+        String pop_item = this.contents[this.contents.length-1];
         this.contents = Arrays.copyOf(this.contents, this.contents.length - 1);
-        numberOfContents -= 1;
+        this.numberOfContents -= 1;
         return pop_item;
     }
 
